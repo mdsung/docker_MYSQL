@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  db:
+    image: mysql:5.7
+    container_name: mysql
+    ports:
+      - "13306:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: yonsei2019!
+      MYSQL_USER: workshop
+      MYSQL_PASSWORD: workshop
